@@ -56,6 +56,6 @@ public class User {
 
     @Override
     public String toString(){
-        return "User firstname is "+this.firstName+" and lastName is "+lastName;
+        return "User firstname is "+this.firstName+" and lastName is "+this.lastName;
     }
 }

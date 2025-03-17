@@ -25,10 +25,10 @@ public class GreetingService implements IGreetingService{
 
         if (user.getFirstName() != null && user.getLastName() != null) {
             message = String.format(template, user.getFirstName(), user.getLastName());
-        } else if (user.getFirstName() != null) {
-            message = String.format("Hello, %s!", user.getFirstName());
-        } else if (user.getLastName() != null) {
-            message = String.format("Hello, %s!", user.getLastName());
+        } else if (user.getFirstName() != null && user.getLastName()!=null) {
+            message = String.format("Hello, %s!", user.getFirstName() , "%s!" ,user.getLastName());
+//        } else if (user.getLastName() != null) {
+//            message = String.format("Hello, %s!", user.getLastName());
         } else {
             message = "Hello, World!";
         }
